@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/03e9a59761.js" crossorigin="anonymous"></script>
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/03a61498fdceb889a05322cc7142e4dd?family=Headliner+No.+45" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<!-- header -->
+
+    <!-- <div class="header">
+        <div class="home-logo"></div>
+        <div class="home-btn">
+            <a href="#"><ion-icon name="home-outline"></ion-icon></a>
+        </div>
+    </div> -->
+
+<!-- menu-bar -->
+
+    <div class="menu-bar">
+        <div class="menu-ico">
+            <div></div>
+        </div>
+        <div class="menu-list">
+            <ul class="menu-items">
+                <li>
+                    <span><a href="#">메뉴 하나</a></span>
+                </li>
+                <li>
+                    <span><a href="#">메뉴 둘</a></span>
+                </li>
+                <li>
+                    <span><a href="#">메뉴 셋</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+<!-- main -->
+
+    <div class="main">
+        <div class="main-title">
+            <img src="images/logo-main.png">
+        </div>
+        <div class="more-btn">
+            <a href="#link-game-rule"><div>
+                <p>더 알아보기 <ion-icon name="arrow-forward-outline"></ion-icon></p>
+            </div></a>
+        </div>
+    </div>
+
+<!-- game-rule -->
+
+    <div class="game-rule" id="link-game-rule">
+        <div class="bg-video">
+            <video muted autoplay loop>
+                <source src="images/bg-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="title">
+            <h1><i class="fa-solid fa-hashtag"></i> 게임 소개</h1>
+        </div>
+        <div class="details">
+            <p style="font-weight: bold;">LAND, LOOT, SURVIVE!</p>
+            <p>다양한 전장에서 전략적 위치를 선점하고 무기와 장비를 확보해 최후의 1인이 되기 위한 생존의 사투를 펼칩니다.
+            친구들과 함께 팀을 만들어 배틀로얄 건플레이 장르의 선구자인 PUBG: BATTLEGROUNDS만이 선사하는 긴장감 넘치는 경험을 위해 도전하세요.</p>
+        </div>
+    </div>
+
+<!-- map-info -->
+
+    <div class="map-info" id="link-map-info">
+        <div class="bg-overlay"></div>
+        <div class="title">
+            <h1><i class="fa-solid fa-hashtag"></i> 맵 소개</h1>
+        </div>
+        <div class="details">
+            <p>사막부터 설원까지 각각의 특징이 담긴 크고 작은 맵과 지형을 탐험하세요.</p>
+        </div>
+        <div class="img-slide-container">
+            <div class="img-slide">
+                <div class="map-img fade">
+                    <img src="images/image1.png">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image2.jpg">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image3.jpg">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image4.jpg">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image5.jpg">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image6.png">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image7.jpg">
+                </div>
+                <div class="map-img fade">
+                    <img src="images/image8.jpg">
+                </div>
+            </div>
+            <a class="prev" onclick="moveImage(-1)"><</a>
+            <a class="next" onclick="moveImage(1)">></a>
+
+            <div class="slide-dots">
+                <span class="dot" onclick="currentImage(1)"></span>
+                <span class="dot" onclick="currentImage(2)"></span>
+                <span class="dot" onclick="currentImage(3)"></span>
+                <span class="dot" onclick="currentImage(4)"></span>
+                <span class="dot" onclick="currentImage(5)"></span>
+                <span class="dot" onclick="currentImage(6)"></span>
+                <span class="dot" onclick="currentImage(7)"></span>
+                <span class="dot" onclick="currentImage(8)"></span>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+<!-- weapon-info -->
+
+    <div class="weapon-info">
+        <div class="bg-overlay"></div>
+        <div class="title">
+            <h1><i class="fa-solid fa-hashtag"></i> 무기 소개</h1>
+        </div>
+        <div class="details">
+            <p>전장 곳곳을 탐색해서 다양한 무기를 구하고, 화려한 선슈팅 액션을 즐겨보세요.</p>
+        </div>
+    </div>
+
+<!-- spec-info -->
+
+    <div class="spec-info">
+        <div class="title">
+            <h1><i class="fa-solid fa-hashtag"></i> 시스템 요구 사항</h1>
+        </div>
+        <div class="spec-table">
+            <ul>
+                <li>최소:</li>
+                <li>64비트 프로세서와 운영 체제가 필요합니다</li>
+                <li>운영체제: 64-bit Windows 7, Windows 8.1, Windows 10</li>
+                <li>프로세서: Intel Core i5-4430 / AMD FX-6300</li>
+                <li>메모리: 8 GB RAM</li>
+                <li>그래픽: NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</li>
+                <li>DirectX: 버전 11</li>
+                <li>네트워크: 초고속 인터넷 연결</li>
+                <li>저장공간: 40 GB 사용 가능 공간</li>
+            </ul>
+            <ul>
+                <li>권장:</li>
+                <li>64비트 프로세서와 운영 체제가 필요합니다</li>
+                <li>운영체제: 64-bit Windows 7, Windows 8.1, Windows 10</li>
+                <li>프로세서: Intel Core i5-6600K / AMD Ryzen 5 1600</li>
+                <li>메모리: 16 GB RAM</li>
+                <li>그래픽: NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB</li>
+                <li>DirectX: 버전 11</li>
+                <li>네트워크: 초고속 인터넷 연결</li>
+                <li>저장공간: 50 GB 사용 가능 공간</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- footer -->
+
+    <div class="footer"></div>
+
+
+
+
+</body>
+</html>
