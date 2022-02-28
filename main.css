@@ -130,19 +130,28 @@
 }
 
 .more-btn {
+    position: relative;
     margin-top: 30px;
-}
-
-.more-btn div {
-    top: 5px;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 10px;
-    border: 1.5px solid #fff;
+    width: 170px;
+    height: 50px;
     cursor: pointer;
 }
 
+.more-btn div::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: url(images/brush.png);
+    background-position: -40px 72.5%;
+    background-size: 250px;
+    transition: width 0.25s;
+}
+
 .more-btn p {
+    position: relative;
     color: #fff;
     margin: 0 20px;
     text-align: center;
@@ -155,6 +164,10 @@
     color: #fff;
     padding-bottom: 3px;
     vertical-align: middle;
+}
+
+.more-btn:hover div::before {
+    width: 170px;
 }
 
 /* game-rule */
@@ -218,6 +231,9 @@ video {
 }
 
 .bg-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
@@ -229,6 +245,10 @@ video {
 
 .map-info .details {
     top: 30%;
+}
+
+.map-info .more-btn {
+    top: 32%;
 }
 
 .img-slide-container {
@@ -284,7 +304,7 @@ video {
     width: 8px;
     margin: 0 2px;
     background-color: #fff;
-    opacity: 80%;
+    opacity: 40%;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -319,6 +339,9 @@ video {
     background-image: url(images/bg-weapon.jpg);
     background-position: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .weapon-info .bg-overlay {
@@ -326,6 +349,10 @@ video {
             linear-gradient(127deg, rgba(0,80,0, 0.8), rgba(0,80,0,0) 70%),
             linear-gradient(336deg, rgba(0,0,80, 0.8), rgba(0,0,80,0) 70%);
     mix-blend-mode: darken;
+}
+
+.weapon-info .more-btn {
+    top: 4%;
 }
 
 /* spec-info */
@@ -353,6 +380,127 @@ video {
 
 .spec-table li {
     color: #fff;
+}
+
+/* social */
+
+.social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: rgb(50, 50, 50);
+    transition: 0.25s;
+}
+
+.social .title {
+    top: 20%;
+}
+
+.social-icons {
+    position: relative;
+    display: flex;
+}
+
+.social-icons li::before {
+    content: attr(data-text);
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%, calc(-50% + 150px));
+    font-size: 10vw;
+    pointer-events: none;
+    font-weight: bold;
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.social-icons li:hover::before {
+    opacity: 0.1;
+    transform: translate(-50%, calc(-50% + 200px));
+}
+
+.social-icons a {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 50px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 0.25s ease;
+}
+
+.js-tilt-glare {
+    border-radius: 20px;
+}
+
+.social-icons .insta::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    background: linear-gradient(60deg, #ffdc80, #f77737, #e1306c, #833ab4, #5851db);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.social-icons .fa-instagram {
+    z-index: 2;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.social-icons a:hover.naver {
+    background: #00c73c;
+}
+
+.social-icons a:hover.youtube {
+    background: #ff0000;
+}
+
+.social-icons a:hover.facebook {
+    background: #1877f2;
+}
+
+.social-icons a:hover.insta::before {
+    background: linear-gradient(60deg, #ffdc80, #f77737, #e1306c, #833ab4, #5851db);
+    opacity: 1;
+}
+
+.social-icons a:hover.tictok {
+    background: #000;
+}
+
+.social-icons a .fa {
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.social-icons a:hover .fa-brands,
+.social-icons a:hover img {
+    transform: scale(1.5) translateZ(30px);
 }
 
 /* footer */

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>PUBG Information</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="js/script.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/03e9a59761.js" crossorigin="anonymous"></script>
     <!-- ionicons -->
@@ -91,6 +92,11 @@
         <div class="details">
             <p>사막부터 설원까지 각각의 특징이 담긴 크고 작은 맵과 지형을 탐험하세요.</p>
         </div>
+        <div class="more-btn">
+            <a href="map-info.html"><div>
+                <p>더 알아보기 <ion-icon name="arrow-forward-outline"></ion-icon></p>
+            </div></a>
+        </div>
         <div class="img-slide-container">
             <div class="img-slide">
                 <div class="map-img fade">
@@ -132,7 +138,7 @@
                 <span class="dot" onclick="currentImage(8)"></span>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </div>
 
 <!-- weapon-info -->
@@ -145,9 +151,39 @@
         <div class="details">
             <p>전장 곳곳을 탐색해서 다양한 무기를 구하고, 화려한 선슈팅 액션을 즐겨보세요.</p>
         </div>
+        <div class="more-btn">
+            <a href="#link-game-rule"><div>
+                <p>더 알아보기 <ion-icon name="arrow-forward-outline"></ion-icon></p>
+            </div></a>
+        </div>
     </div>
 
-<!-- spec-info -->
+<!-- social -->
+
+    <div class="social">
+        <div class="title">
+            <h1><i class="fa-solid fa-hashtag"></i> 커뮤니티</h1>
+        </div>
+        <ul class="social-icons">
+            <li data-text="네이버 카페" data-color="#00c73c">
+                <a href="https://cafe.naver.com/playbattlegrounds" target="_blank" class="naver"><img src="images/navercafe.png"></a>
+            </li>
+            <li data-text="유튜브" data-color="#ff0000">
+                <a href="https://www.youtube.com/channel/UCms8Ge7H1ZGgw6nV94fUhUQ" target="_blank"  class="youtube"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li data-text="페이스북" data-color="#1877f2">
+                <a href="https://www.facebook.com/PUBGBATTLEGROUNDSKR" target="_blank"  class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li data-text="인스타그램" data-color="linear-gradient(60deg, #ffdc80, #f77737, #e1306c, #833ab4, #5851db)">
+                <a href="https://www.instagram.com/pubg_battlegrounds_kr/" target="_blank"  class="insta"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li data-text="틱톡" data-color="#000">
+                <a href="https://www.tiktok.com/@pubg.kr.official" target="_blank"  class="tictok"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- spec-info -->
 
     <div class="spec-info">
         <div class="title">
@@ -181,7 +217,9 @@
 
 <!-- footer -->
 
-    <div class="footer"></div>
+    <div class="footer">
+        
+    </div>
 
 
 
