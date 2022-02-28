@@ -40,15 +40,6 @@
 
     <div class="page" style="display: none;">
 
-<!-- header -->
-
-        <!-- <div class="header">
-            <div class="home-logo"></div>
-            <div class="home-btn">
-                <a href="#"><ion-icon name="home-outline"></ion-icon></a>
-            </div>
-        </div> -->
-
 <!-- menu-bar -->
 
         <div class="menu-bar">
@@ -58,16 +49,31 @@
             <div class="menu-list">
                 <ul class="menu-items">
                     <li>
-                        <span><a href="#">메뉴 하나</a></span>
+                        <span><a href="#link-game-rule">게임 소개</a></span>
                     </li>
                     <li>
-                        <span><a href="#">메뉴 둘</a></span>
+                        <span><a href="#link-map-info">맵 소개</a></span>
                     </li>
                     <li>
-                        <span><a href="#">메뉴 셋</a></span>
+                        <span><a href="#link-weapon-info">무기 소개</a></span>
+                    </li>
+                    <li>
+                        <span><a href="#link-social">커뮤니티</a></span>
                     </li>
                 </ul>
             </div>
+        </div>
+
+<!-- nav-bar -->
+        <div class="nav-bar">
+            <a href="#"><div class="up-ico">
+                <i class="fa-solid fa-horizontal-rule"></i>
+                <i class="fa-solid fa-angle-up"></i>
+            </div></a>
+            <a href="#bottom"><div class="down-ico">
+                <i class="fa-solid fa-angle-down"></i>
+                <i class="fa-solid fa-horizontal-rule"></i>
+            </div></a>
         </div>
 
 <!-- main -->
@@ -162,7 +168,7 @@
 
 <!-- weapon-info -->
 
-        <div class="weapon-info">
+        <div class="weapon-info" id="link-weapon-info">
             <div class="bg-overlay"></div>
             <div class="title">
                 <h1><i class="fa-solid fa-hashtag"></i> 무기 소개</h1>
@@ -179,7 +185,7 @@
 
 <!-- social -->
 
-        <div class="social">
+        <div class="social" id="link-social">
             <div class="title">
                 <h1><i class="fa-solid fa-hashtag"></i> 커뮤니티</h1>
             </div>
@@ -233,12 +239,7 @@
                 </ul>
             </div>
         </div>
-
-<!-- footer -->
-
-        <div class="footer">
-            
-        </div>
+        <div id="bottom"></div>
     </div>
 </body>
 </html>

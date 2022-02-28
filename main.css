@@ -74,29 +74,6 @@
     }
 }
 
-/* header */
-
-/* .header {
-    background: yellowgreen;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: fit-content;
-}
-
-.home-logo {
-    background: rebeccapurple;
-    width: 50px;
-    height: 50px;
-}
-
-.home-btn {
-    position: absolute;
-    right: 35px;
-    top: 30px;
-    font-size: 30px;
-} */
-
 /* menu-bar */
 
 .menu-bar {
@@ -164,6 +141,47 @@
     font-size: 50px;
     line-height: 200%;
     font-weight: 100;
+}
+
+/* nav-bar */
+
+.nav-bar {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 100px;
+    padding: 2px;
+    border-radius: 25px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.nav-bar div {
+    background: rgba(255, 255, 255, 0.4);
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.nav-bar div i {
+    transition: all 0.25s;
+}
+
+.nav-bar div:hover i {
+    color: #f0a510;
+}
+
+.nav-bar div:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /* main */
@@ -402,33 +420,6 @@ video {
     top: 4%;
 }
 
-/* spec-info */
-
-.spec-info {
-    background: #000;
-    position: relative;
-    height: 80vh;
-}
-
-.spec-info .title {
-    top: 15%;
-}
-
-.spec-table {
-    display: inline-flex;
-    position: absolute;
-    top: 40%;
-    right: calc(50% - 40vw);
-}
-
-.spec-table ul {
-    width: 40vw;
-}
-
-.spec-table li {
-    color: #fff;
-}
-
 /* social */
 
 .social {
@@ -550,4 +541,29 @@ video {
     transform: scale(1.5) translateZ(30px);
 }
 
-/* footer */
+/* spec-info */
+
+.spec-info {
+    background: #000;
+    position: relative;
+    height: 80vh;
+}
+
+.spec-info .title {
+    top: 15%;
+}
+
+.spec-table {
+    display: inline-flex;
+    position: absolute;
+    top: 40%;
+    right: calc(50% - 40vw);
+}
+
+.spec-table ul {
+    width: 40vw;
+}
+
+.spec-table li {
+    color: #fff;
+}
