@@ -47,8 +47,6 @@ function showImages() {
 
 // 소셜 링크 배경 전환
 
-
-
 window.onload = function() {
 
   VanillaTilt.init(document.querySelectorAll(".social-icons li a"), {
@@ -73,3 +71,14 @@ window.onload = function() {
     })
   })
 }
+
+// 로딩 페이지
+
+function loading() {
+  var loader = document.querySelector(".loading-screen");
+  var page = document.querySelector(".page");
+  loader.style.display = "none";
+  page.style.display = "block";
+}
+
+setTimeout(loading, 2000);
