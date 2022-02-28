@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    background-color: #555;
+    overflow: hidden;
+}
+
+.home-btn {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 170px;
+    height: 50px;
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.home-btn a {
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.home-shadow {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.text {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -170px;
+    width: 0px;
+    height: 50px;
+    border-radius: 200px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 50px;
+    transition: all 0.25s;
+}
+
+.home-btn:hover .text {
+    left: 0px;
+    width: 170px;
+    padding-right: 20px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.type-btn {
+    position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    height: fit-content;
+}
+
+.type-btn div a {
+    transition: color 0.25s ease;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #eee;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.type-btn div a:hover,
+.type-btn div .active {
+    color: #f0a510;
+}
+
+.weapon-swiper {
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background: #eee;
+    border-radius: 20px;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+}
+
+.swiper-slide-active {
+    background: #fff;
+    filter: none;
+}
+
+.weapon-box {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.weapon-box img {
+    display: block;
+    width: 300px;
+}
+
+.weapon-box .info {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+    width: 100%;
+}
+
+.weapon-box .info h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+.weapon-box .info p {
+    font-family: 'Oswald', sans-serif;
+    color: #aaa;
+    margin-left: 8px;
+}
+
+.weapon-box .info .type {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    font-size: 300px;
+    letter-spacing: -15px;
+    color: #eee;
+    z-index: -1;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #f0a510 !important;
+}
