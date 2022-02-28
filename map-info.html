@@ -4,10 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>맵 소개</title>
     <link rel="stylesheet" href="map-info.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     
+    <div class="home-btn">
+        <div class="text">홈으로 가기</div>
+        <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+    </div>
+    <div class="home-shadow"></div>
+
+    <div class="map-choose">
+        <div class="map-pics">
+            <div class="map-pic" style="transform: rotate(-10deg);"><a href="#arangel">
+                <img src="images/erangel.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>ARANGEL</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(5deg);"><a href="#miramar">
+                <img src="images/miramar.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>MIRAMAR</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(-5deg);"><a href="#sanhok">
+                <img src="images/sanhok.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>SANHOK</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(3deg);"><a href="#vikendi">
+                <img src="images/vikendi.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>VIKENDI</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(-8deg);"><a href="#karakin">
+                <img src="images/karakin.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>KARAKIN</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(2deg);"><a href="#paramo">
+                <img src="images/paramo.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>PARAMO</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(7deg);"><a href="#haven">
+                <img src="images/haven.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>HAVEN</h1></div>
+            </a></div>
+            <div class="map-pic" style="transform: rotate(-6deg);"><a href="#taego">
+                <img src="images/taego.png">
+                <img class="paper" src="images/paper.png">
+                <div><h1>TAEGO</h1></div>
+            </a></div>
+        </div>
+    </div>
+    <div class="map-popup">
+        <div class="pop" id="arangel">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>에란겔</h1>
+                <p>8x8 크기에 다양한 지형을 특징으로 가지고 있는 에란겔에서 넓은 목초지, 높은 산지 그리고 수많은 도시를 탐험해 보세요.
+                    에란겔은 배틀그라운드의 대부 세르게이 칼림닉이 태어난 곳이자 그가 최후의 생존자가 된 곳이며, 첫 번째 공식 배틀그라운드 경기가 개최된 섬이기도 합니다.</p>
+            </div>
+            <img src="images/erangel-map.png">
+        </div>
+        <div class="pop" id="miramar">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>미라마</h1>
+                <p>지금은 유령 도시처럼 척박한 지형이 늘어진, 황량한 8x8 의 땅인 미라마는 높은 저격 포인트와 드문 식생 덕분에 스나이퍼들의 천국입니다.
+                    한때 드라마 프로듀서였던 헥터 오초아가 미라마에서 악명 높은 죽음의 레이스 '아 라 무에르테 바모스!'를 개최했습니다. 수년 뒤, 그는 카르텔로부터 되찾은 미라마를 배틀그라운드로 만들었습니다.</p>
+            </div>
+            <img src="images/miramar-map.png">
+        </div>
+        <div class="pop" id="sanhok">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>사녹</h1>
+                <p>사녹은 4x4 크기의 땅으로 작지만 아이템이 풍부하고 다수의 생존자들이 근거리에 밀집해있기 때문에 빠르고 정신없는 교전을 즐길 수 있습니다.
+                    울창한 열대 정글로 이루어진 사녹에서 그 유명한 '사녹 테이프'가 탄생했습니다. 이후 사녹 4인이라 불리게 된 4명의 전투원들의 탈출 장면을 포착한 테이프죠.</p>
+            </div>
+            <img src="images/sanhok-map.png">
+        </div>
+        <div class="pop" id="vikendi">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>비켄디</h1>
+                <p>칼 린드의 다이노 랜드 터 위에 만들어진 비켄디에선 이제 가장 소름 끼치는 배틀그라운드가 열립니다. 칼의 소시오패스 아들 알렉스는 그의 아버지와 누이의 죽음, 그리고 다이노 랜드의 궤멸에도 한몫했습니다.
+                    소박한 시골 마을에서 유명 관광지로, 그리고 치열한 배틀그라운드가 되기까지 수많은 변화를 겪은 6x6 크기의 비켄디는 얼어붙은 호수, 상록수 등 독특한 감성을 만나보세요.</p>
+            </div>
+            <img src="images/vikendi-map.png">
+        </div>
+        <div class="pop" id="karakin">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>카라킨</h1>
+                <p>사막 섬 카라킨은 직물 사업과 문어 수산업으로 알려져 있습니다. 하지만 무엇보다 유명한 건 배틀그라운드에서 가장 인기 있는 승자인 전장의 신부 사디야죠.
+                    사디야는 마지막까지 생존해 고향과 가족의 영예를 모두 되찾았습니다.
+                    2x2 크기의 작지만 버라이어티 한 카라킨에서 와일드하고 스피디한 교전을 펼쳐보세요.</p>
+            </div>
+            <img src="images/karakin-map.png">
+        </div>
+        <div class="pop" id="paramo">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>파라모</h1>
+                <p>파라모는 3x3 크기의 전장으로, 활화산에서 흘러나온 용암이 맵 전역에서 목격되며, 매치마다 맵의 지형이 변경됩니다. 이 때문에 노련한 생존자들에게도 까다로운 맵입니다.
+                    파라모에 위치한 타이토닉 연구소에서는 우주 너머에서 온 신비로운 꽃으로 실험을 하고 있다는 소문도 들립니다.
+                    
+                    <br>*파라모는 매 세션마다 랜덤으로 주요 지역 위치가 변경됩니다</p>
+            </div>
+            <img src="images/paramo-map.png">
+        </div>
+        <div class="pop" id="haven">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>헤이븐</h1>
+                <p>타이토닉의 비밀스러운 블루칩 사업의 허브가 되는 산업 단지 섬입니다. 무자비한 용병 조직 필라는 헤이븐을 감시하며 이곳의 비밀이 외부에 알려지는 것을 막고 있습니다. 그러니 이름에 속지 마세요. 밀도 높은 1x1 도시 맵 헤이븐에서 뒷골목과 루프탑을 누비며 용병 조직인 필라를 쓰러뜨려 아이템을 획득하고, 다른 생존자들을 물리쳐 최후의 승자가 되세요.</p>
+            </div>
+            <img src="images/haven-map.png">
+        </div>
+        <div class="pop" id="taego">
+            <a href="#"><div class="close"></div></a>
+            <div class="details">
+                <h1>태이고</h1>
+                <p>태이고는 배틀그라운드의 기원이 된 8x8 크기의 맵입니다. 과거 태이고 호산 교도소의 악명 높은 수감자 마강재가 나머지 재소자 전부와 싸웠던 폭동 영상은 불티나게 팔렸습니다.
+                    이 영상은 '굴락 테이프'란 이름을 얻었고, 이후 세르게이가 배틀그라운드를 만들게 된 계기가 되었습니다.
+                    이러한 태이고는 갈대밭부터 호산 교도소의 중심부까지 다양한 지형을 갖고 있습니다. 또한, 셀프 부활이 가능한 자가 제세동기와 두 번째 생존 기회를 얻을 수 있는 복귀전 등 태이고만의 독특한 피처들도 만나보세요.</p>
+            </div>
+            <img src="images/taego-map.png">
+        </div>
+    </div>
+
 </body>
 </html>
