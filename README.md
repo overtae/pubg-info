@@ -27,4 +27,4 @@ https://www.figma.com/file/0YajEYJYIwSa70m0pvuwyY/pubg-info?node-id=0%3A1
 
 # Notion 정리
 
-https://www.notion.so/overtae/2022-IFP-Project-59fcedf4a553445d94aa610ce74544c2
+https://overtae.notion.site/2022-IFP-Project-59fcedf4a553445d94aa610ce74544c2
