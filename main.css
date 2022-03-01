@@ -140,7 +140,12 @@
     color: #fff;
     font-size: 50px;
     line-height: 200%;
-    font-weight: 100;
+    font-weight: 500;
+    transition: color 0.25s;
+}
+
+.menu-items a:hover {
+    color: #f0a510;
 }
 
 /* nav-bar */
